@@ -2,6 +2,7 @@
 
 <html lang="es" xmlns="http://www.w3.org/1999/xhtml">
 <head>
+    <link rel="stylesheet" href="Styles/IndexStyles.css" />
     <link rel="stylesheet" href="Styles/CommonStyles.css" />
     <meta charset="utf-8" />
     <title>Inicio | Portimagic</title>
@@ -9,13 +10,11 @@
 <body>
     <header>
         <!-- Header whit photo and searchbox-->
-        <img src="Images/Logo.jpeg" width="19px" height="40px" alt="Logo" />
-        <div>
-            <!--Search box-->
-            <form>
-                <input type="text" placeholder="Buscar" />
-            </form>
-        </div>
+        <img id="logo" src="Images/Logo.jpeg" alt="Logo" />
+        <!--Search box-->
+        <form>
+            <input type="text" placeholder="Buscar" />
+        </form>
         <nav>
             <!--Navigation bar-->
             <a id="activeTab" href="index.html">Inicio</a>
@@ -25,30 +24,44 @@
             <a href="https://www.instagram.com/portimagic/">Instagram</a>
         </nav>
     </header>
-    <main>
-        <section>
-            <!--Banner with video-->
+    <section id="banner">
+        <!--Banner with video-->
+        <video id="background-video" autoplay loop muted><source src="Images/BannerBackground.mp4" /></video>
+        <div id="bannerTittle">
             <h1>Portimagic</h1>
-            <h4>Desarrollador web en potencia</h4>
-        </section>
-        <section>
+            <p>Desarrollador web en potencia</p>
+        </div>
+    </section>
+    <main>
+        <section id="blog">
             <!--Blog section-->
             <article>
                 <!--Blog article-->
-                <img src="Images/Post semana 0 mi camino.png" width="454px" height="340.5px" alt="Imagen ilustrativa" />
-                <h3>Semana 0: Mi camino</h3>
-                <p>En el post Como aprender a programar compartí ideas y consejos para empezar en el mundo de la programación basados en mi experiencia...</p>
+                <div class="postImg">
+                    <img src="Images/Post semana 0 mi camino.png" alt="Imagen ilustrativa" />
+
+                </div>
+                <div class="postText" ">
+                    <h3>Semana 0: Mi camino</h3>
+                    <p>En el post Como aprender a programar compartí ideas y consejos para empezar en el mundo de la programación basados en mi experiencia...</p>
+                </div>
             </article>
             <article>
                 <!--Blog article-->
-                <img src="Images/Post como aprender a progrmar.jpg" width="454px" height="340.5px" alt="Imagen ilustrativa" />
-                <h3>Como aprender a progrmar</h3>
-                <p>Aprender a programar es "fácil", internet esta llego de blogs, videos, foros y hasta páginas de cursos gratuitos. Uno podría pensar,...</p>
+                <div class="postImg">
+                    <img src="Images/Post como aprender a progrmar.jpg" alt="Imagen ilustrativa" />
+                </div>
+                <div class="postText">
+                    <h3>Como aprender a progrmar</h3>
+                    <p>Aprender a programar es "fácil", internet esta llego de blogs, videos, foros y hasta páginas de cursos gratuitos. Uno podría pensar,...</p>
+                </div>
             </article>
         </section>
-        <section>
+        <section id="about">
             <!--About me-->
-            <img src="Images/Logo.jpeg" height="200px" alt="Imagen de perfil" />
+            <div id="aboutImgContainer">
+                <img src="Images/Logo.jpeg" alt="Imagen de perfil" />
+            </div>
             <h2>Sobre mi</h2>
             <p>
                 Soy Portimagic, QA Automation engeneer. La idea de este blog es usarlo para compartir mi experecien aprendiendo desarrollo web para motivar y ayudar a quienes quieran recorrer el mismo  camino.
