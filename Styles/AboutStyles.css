@@ -1,0 +1,16 @@
+#Blog_Image {
+    width: 220px;
+    border-radius: 110px;
+}
+
+#Description {
+    text-align: center;
+    line-height: 1.5;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 18px;
+}
+
+main {
+    padding: 10%;
+}

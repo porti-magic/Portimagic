@@ -1,0 +1,118 @@
+/*-----Banner-----*/
+#banner {
+    height: 75%;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 1%
+}
+
+#background-video {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+#bannerTittle {
+    background-image: radial-gradient(circle at 98.75% 100%, #E71D1D 0%, 20%, rgba(231,29,29,0) 40%), radial-gradient(circle at 0% 100%, rgba(0,0,0,0.99) 0%, 25%, rgba(0,0,0,0) 50%), radial-gradient(circle at 0% 0%, #9A1313 0%, 42%, rgba(154,19,19,0) 70%), radial-gradient(circle at 100% 0%, #000000 0%, 42%, rgba(0,0,0,0) 70%), radial-gradient(circle at 48.9013671875% 49.521484375%, #000000 0%, 100%, rgba(0,0,0,0) 100%);
+    position: relative;
+    width: 100%;
+}
+
+    #bannerTittle p {
+        font: normal normal normal 20px/1.67em'times new roman',times,serif;
+        color: white;
+    }
+
+h1 {
+    font: 72px/1.25em poppins-extralight,poppins,sans-serif;
+    margin: 1%;
+    color: red;
+}
+
+/*-----Blog articles-----*/
+
+
+article {
+    display: flex;
+    margin: 1% 25% 1% 25%;
+    background-color: black;
+    text-align: left;
+}
+
+.postImg {
+    width: 450px;
+    height: 350px;
+    flex: 1;
+}
+
+    .postImg img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%
+    }
+
+article div {
+    flex: 1;
+}
+
+.postText {
+    margin: 5%;
+}
+
+    .postText h3 {
+        font-weight: 600;
+        font-size: 150%;
+    }
+
+    .postText :hover {
+        color: rgb(129, 0, 0);
+    }
+
+/*-----About-----*/
+#about {
+    background-color: red;
+    padding: 1%;
+}
+
+#aboutImgContainer {
+    height: 200px;
+    width: 200px;
+    border-radius: 200px;
+    overflow: hidden;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    position: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    #aboutImgContainer img {
+        object-fit: cover;
+        width: inherit;
+        object-position: 50% 50%;
+    }
+
+#about h2 {
+    font-weight: 600;
+    font-size: 200%;
+}
+
+#about p {
+    text-align: center;
+    line-height: 1.5;
+    margin-left: 25%;
+    margin-right: 25%;
+    font-size: 18px;
+}
